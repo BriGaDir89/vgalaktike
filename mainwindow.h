@@ -7,6 +7,11 @@
 #include <QDebug>
 #include <QNetworkAccessManager>
 #include <QNetworkRequest>
+#include <QNetworkReply>
+#include <QFileDialog>
+
+
+#include <amf.h>
 
 namespace Ui {
 class MainWindow;

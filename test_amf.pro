@@ -11,6 +11,11 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = test_amf
 TEMPLATE = app
 
+LIBS += -lws2_32
+INCLUDEPATH += C:/OpenSSL-Win32/include
+DEPENDPATH += C:/OpenSSL-Win32/include
+LIBS += -LC:/OpenSSL-Win32/lib/ -llibeay32
+LIBS += -LC:/OpenSSL-Win32/lib/ -lssleay32
 
 SOURCES += main.cpp\
         mainwindow.cpp \
